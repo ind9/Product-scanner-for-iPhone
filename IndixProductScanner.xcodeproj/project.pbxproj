@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F594A8D91C71EB0B00D70DB6 /* OfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F594A8D81C71EB0B00D70DB6 /* OfferTableViewCell.m */; };
 		F5A306421C6C838100AB8A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A306411C6C838100AB8A27 /* main.m */; };
 		F5A306451C6C838100AB8A27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A306441C6C838100AB8A27 /* AppDelegate.m */; };
 		F5A306481C6C838100AB8A27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A306471C6C838100AB8A27 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		F5A306501C6C838100AB8A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A3064E1C6C838100AB8A27 /* LaunchScreen.storyboard */; };
 		F5A3065B1C6C838200AB8A27 /* IndixProductScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3065A1C6C838200AB8A27 /* IndixProductScannerTests.m */; };
 		F5A306661C6C838200AB8A27 /* IndixProductScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A306651C6C838200AB8A27 /* IndixProductScannerUITests.m */; };
+		F5A306741C6C854E00AB8A27 /* list_titlebar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A306731C6C854E00AB8A27 /* list_titlebar_bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F594A8D71C71EB0B00D70DB6 /* OfferTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferTableViewCell.h; sourceTree = "<group>"; };
+		F594A8D81C71EB0B00D70DB6 /* OfferTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferTableViewCell.m; sourceTree = "<group>"; };
 		F5A3063D1C6C838100AB8A27 /* IndixProductScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndixProductScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A306411C6C838100AB8A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5A306431C6C838100AB8A27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		F5A306611C6C838200AB8A27 /* IndixProductScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndixProductScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A306651C6C838200AB8A27 /* IndixProductScannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndixProductScannerUITests.m; sourceTree = "<group>"; };
 		F5A306671C6C838200AB8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A306731C6C854E00AB8A27 /* list_titlebar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_titlebar_bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		F5A3063F1C6C838100AB8A27 /* IndixProductScanner */ = {
 			isa = PBXGroup;
 			children = (
+				F5A306731C6C854E00AB8A27 /* list_titlebar_bg.png */,
 				F5A306431C6C838100AB8A27 /* AppDelegate.h */,
 				F5A306441C6C838100AB8A27 /* AppDelegate.m */,
 				F5A306461C6C838100AB8A27 /* ViewController.h */,
@@ -110,6 +116,8 @@
 				F5A3064E1C6C838100AB8A27 /* LaunchScreen.storyboard */,
 				F5A306511C6C838100AB8A27 /* Info.plist */,
 				F5A306401C6C838100AB8A27 /* Supporting Files */,
+				F594A8D71C71EB0B00D70DB6 /* OfferTableViewCell.h */,
+				F594A8D81C71EB0B00D70DB6 /* OfferTableViewCell.m */,
 			);
 			path = IndixProductScanner;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A306501C6C838100AB8A27 /* LaunchScreen.storyboard in Resources */,
+				F5A306741C6C854E00AB8A27 /* list_titlebar_bg.png in Resources */,
 				F5A3064D1C6C838100AB8A27 /* Assets.xcassets in Resources */,
 				F5A3064B1C6C838100AB8A27 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F594A8D91C71EB0B00D70DB6 /* OfferTableViewCell.m in Sources */,
 				F5A306481C6C838100AB8A27 /* ViewController.m in Sources */,
 				F5A306451C6C838100AB8A27 /* AppDelegate.m in Sources */,
 				F5A306421C6C838100AB8A27 /* main.m in Sources */,
@@ -496,6 +506,7 @@
 				F5A3066C1C6C838200AB8A27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5A3066D1C6C838200AB8A27 /* Build configuration list for PBXNativeTarget "IndixProductScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				F5A3066F1C6C838200AB8A27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5A306701C6C838200AB8A27 /* Build configuration list for PBXNativeTarget "IndixProductScannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				F5A306721C6C838200AB8A27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
