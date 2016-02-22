@@ -14,23 +14,23 @@ GET https://api.indix.com/v2/universal/products?countryCode=US&upc=0075375997584
 ```
 which returns 
 
-```
+```yaml
 {
 "message": "ok",
 "result": {
 "count": 1,
 "products": [
-	"title":"Garmin eTrex 10 GPS Unit",
-	"currency":"USD",
+	"title": "Garmin eTrex 10 GPS Unit",
+	"currency": "USD",
 	"stores": [
 		"108":{
 			...
-			"storeName":"Cabelas",
+			"storeName": "Cabelas",
 			"offers":[
 				{
 					...
-					"listPrice":109.99,
-					"productUrl":"http://www.cabelas.com/product/Garmin-eTrex-GPS-Unit/1218229.uts?productVariantId=2963934"
+					"listPrice": 109.99,
+					"productUrl": "http://www.cabelas.com/product/Garmin-eTrex-GPS-Unit/1218229.uts?productVariantId=2963934"
 				}]
 			}
 		]
@@ -43,7 +43,7 @@ which returns
 ###Fetch offers in iOS app
 To get started let's call a method `[self performSearchForUPC:@"00753759975845"];` in viewDidLoad which display all the offer for the given UPC.
 
-```
+```objective-c
 - (void)performSearchForUPC:(NSString *)upcString {
     NSMutableString *searchUrlByIndix = [[NSMutableString alloc] initWithString:@"https://api.indix.com/v2/universal/products?countryCode=US"];
     [searchUrlByIndix appendString:[NSString stringWithFormat:@"&app_id=%@", INDIX_API_ID]];
@@ -66,7 +66,7 @@ To get started let's call a method `[self performSearchForUPC:@"00753759975845"]
 
 `dojsonGetRequestForURL` is a function which perform a get request for the given URL and do a json parsing on top of the response. On success it executes method in `callOnSuccess` block and on failure it executes method in `callOnFailure` block
 
-```
+```objective-c
 - (void)dojsonGetRequestForURL:(NSURL *)url callOnSuccess:(void(^)(NSDictionary *data))success callOnFailure:(void(^)(NSError *error))failure {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:url];
@@ -94,7 +94,7 @@ To get started let's call a method `[self performSearchForUPC:@"00753759975845"]
 ```
 Once we are sure we got proper response, `onSuccessForUrlProductSearch:` will be executed.
 
-```
+```objective-c
 - (void)onSuccessForUrlProductSearch:(NSDictionary *)i_jsonData {
     id i_resultObject = i_jsonData[@"result"];
     id i_allProductArray = i_resultObject[@"products"];
@@ -113,7 +113,7 @@ Once we are sure we got proper response, `onSuccessForUrlProductSearch:` will be
 ```
 First, check if we have products detail from the given upc, if yes we continue to parse it to fetch only those information we need
 
-```
+```objective-c
 - (NSMutableArray *)parseProductArrayToExtractProducts:(NSArray *)i_allProductArray {
     NSMutableArray *o_parsedarray = [[NSMutableArray alloc] init];
     for (NSDictionary *productDictionary in i_allProductArray) {
@@ -142,7 +142,7 @@ First, check if we have products detail from the given upc, if yes we continue t
 
 That is it, we successfully fetched and parsed the response, make sure we handle the error cases properly.
 
-```
+```objective-c
 - (void)onFailureForUrlProductSearch:(NSString *)title message:(NSString *)message {
     UIAlertController *alertcontroller = [[UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert] init];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
