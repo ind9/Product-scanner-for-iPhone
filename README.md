@@ -1,5 +1,5 @@
 ##Product scanner
-This is an example project that demonstrate on how easy it is to use Indix API to scan a product and show all stores and prices across stores where product can be bought. Please feel free to download the project from Github https://github.com/nalinchhajer1/Product-scanner-for-iPhone for reference. Feel free to checkout screenshots.
+This is an example project that demonstrate on how easy it is to use Indix API to scan a product and show all stores and prices across stores where product can be bought. Please feel free to download the project from Github https://github.com/ind9/Product-scanner-for-iPhone for reference. Feel free to checkout screenshots.
 
 ###Get Started
 1. Signup with Indix.com, and get your API ID and API key. 

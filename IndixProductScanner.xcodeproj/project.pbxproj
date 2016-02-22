@@ -14,9 +14,9 @@
 		F5A3064B1C6C838100AB8A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A306491C6C838100AB8A27 /* Main.storyboard */; };
 		F5A3064D1C6C838100AB8A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A3064C1C6C838100AB8A27 /* Assets.xcassets */; };
 		F5A306501C6C838100AB8A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A3064E1C6C838100AB8A27 /* LaunchScreen.storyboard */; };
-		F5A3065B1C6C838200AB8A27 /* IndixProductScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3065A1C6C838200AB8A27 /* IndixProductScannerTests.m */; };
-		F5A306661C6C838200AB8A27 /* IndixProductScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A306651C6C838200AB8A27 /* IndixProductScannerUITests.m */; };
 		F5A306741C6C854E00AB8A27 /* list_titlebar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A306731C6C854E00AB8A27 /* list_titlebar_bg.png */; };
+		F5F33F8C1C7AF9CD00D55FDF /* RMOutlineBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F33F891C7AF9CD00D55FDF /* RMOutlineBox.m */; };
+		F5F33F8D1C7AF9CD00D55FDF /* RMScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F33F8B1C7AF9CD00D55FDF /* RMScannerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +50,12 @@
 		F5A3064F1C6C838100AB8A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A306511C6C838100AB8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A306561C6C838200AB8A27 /* IndixProductScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndixProductScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A3065A1C6C838200AB8A27 /* IndixProductScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndixProductScannerTests.m; sourceTree = "<group>"; };
-		F5A3065C1C6C838200AB8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A306611C6C838200AB8A27 /* IndixProductScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndixProductScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A306651C6C838200AB8A27 /* IndixProductScannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndixProductScannerUITests.m; sourceTree = "<group>"; };
-		F5A306671C6C838200AB8A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A306731C6C854E00AB8A27 /* list_titlebar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_titlebar_bg.png; sourceTree = "<group>"; };
+		F5F33F881C7AF9CD00D55FDF /* RMOutlineBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMOutlineBox.h; path = RMScannerView/RMOutlineBox.h; sourceTree = "<group>"; };
+		F5F33F891C7AF9CD00D55FDF /* RMOutlineBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMOutlineBox.m; path = RMScannerView/RMOutlineBox.m; sourceTree = "<group>"; };
+		F5F33F8A1C7AF9CD00D55FDF /* RMScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMScannerView.h; path = RMScannerView/RMScannerView.h; sourceTree = "<group>"; };
+		F5F33F8B1C7AF9CD00D55FDF /* RMScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMScannerView.m; path = RMScannerView/RMScannerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				F5A3063F1C6C838100AB8A27 /* IndixProductScanner */,
-				F5A306591C6C838200AB8A27 /* IndixProductScannerTests */,
-				F5A306641C6C838200AB8A27 /* IndixProductScannerUITests */,
 				F5A3063E1C6C838100AB8A27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +109,7 @@
 				F5A306441C6C838100AB8A27 /* AppDelegate.m */,
 				F5A306461C6C838100AB8A27 /* ViewController.h */,
 				F5A306471C6C838100AB8A27 /* ViewController.m */,
+				F5F33F8E1C7AF9D200D55FDF /* RMScannerView */,
 				F5A306491C6C838100AB8A27 /* Main.storyboard */,
 				F5A3064C1C6C838100AB8A27 /* Assets.xcassets */,
 				F5A3064E1C6C838100AB8A27 /* LaunchScreen.storyboard */,
@@ -130,22 +129,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F5A306591C6C838200AB8A27 /* IndixProductScannerTests */ = {
+		F5F33F8E1C7AF9D200D55FDF /* RMScannerView */ = {
 			isa = PBXGroup;
 			children = (
-				F5A3065A1C6C838200AB8A27 /* IndixProductScannerTests.m */,
-				F5A3065C1C6C838200AB8A27 /* Info.plist */,
+				F5F33F881C7AF9CD00D55FDF /* RMOutlineBox.h */,
+				F5F33F891C7AF9CD00D55FDF /* RMOutlineBox.m */,
+				F5F33F8A1C7AF9CD00D55FDF /* RMScannerView.h */,
+				F5F33F8B1C7AF9CD00D55FDF /* RMScannerView.m */,
 			);
-			path = IndixProductScannerTests;
-			sourceTree = "<group>";
-		};
-		F5A306641C6C838200AB8A27 /* IndixProductScannerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F5A306651C6C838200AB8A27 /* IndixProductScannerUITests.m */,
-				F5A306671C6C838200AB8A27 /* Info.plist */,
-			);
-			path = IndixProductScannerUITests;
+			name = RMScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +275,8 @@
 				F5A306481C6C838100AB8A27 /* ViewController.m in Sources */,
 				F5A306451C6C838100AB8A27 /* AppDelegate.m in Sources */,
 				F5A306421C6C838100AB8A27 /* main.m in Sources */,
+				F5F33F8D1C7AF9CD00D55FDF /* RMScannerView.m in Sources */,
+				F5F33F8C1C7AF9CD00D55FDF /* RMOutlineBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A3065B1C6C838200AB8A27 /* IndixProductScannerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A306661C6C838200AB8A27 /* IndixProductScannerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
